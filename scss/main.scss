@@ -1,6 +1,7 @@
 
 // Import files
 @import 'config';
+@import 'utilities';
 
 
 //-------[ General Core Styles ]-------//
@@ -41,18 +42,72 @@ img{
     width: 100%;
 }
 
+
+// Logo
+#logo{
+    width: 7rem;
+    height: 7rem;
+    color: $primary-color;
+    text-transform:uppercase;
+}
+
+// Main Nav
+#main-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+
+    // Ul 
+    ul{
+        display:flex;
+    }
+     
+    // li 
+    li{
+        padding: 1rem 1.5rem;
+    }
+
+    // Link
+    a{
+       text-decoration: none; 
+       color:$primary-color;
+       text-transform: uppercase;
+       border-bottom: 0.3rem transparent solid;
+       padding-bottom: 0.5rem;
+       transition: border-color 0.5s;
+
+       // Link:hover
+       &:hover{
+           border-color: $medium-color;
+       }
+       &.current{
+           border-color: $main-color;
+       }
+    }
+}
+
 // Header
 #header{
     
-    // Home content
+    //  Header Home 
     &-home{
         background:$bg-image no-repeat center right / cover;
         height: 100vh;
         color: #fff;
+
+        // Header Content
+        .header-content{
+            text-align: center;
+            padding-top: 20%;
+
+            // Header head line
+            h1{
+                font-size: 4rem;
+                line-height: 1.2;
+            }
+        }
+
     }
 
-    // Inner content
-    &-inner{
-
-    }
+    
 }
