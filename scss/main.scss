@@ -9,12 +9,15 @@
     padding: 0;
 }
 
+html{
+    font-size: $main-font-size;
+}
 
 body{
     background: $light-color;
     font-family: $primary-font;
     line-height: 1.6;
-    
+    font-size: $medium-font-size;
 }
 
 // Links 
@@ -36,4 +39,20 @@ h2, h3, h4 {
 // Images
 img{
     width: 100%;
+}
+
+// Header
+#header{
+    
+    // Home content
+    &-home{
+        background:$bg-image no-repeat center right / cover;
+        height: 100vh;
+        color: #fff;
+    }
+
+    // Inner content
+    &-inner{
+
+    }
 }

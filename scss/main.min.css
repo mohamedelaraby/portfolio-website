@@ -1,1 +1,1 @@
-*{margin:0;padding:0}body{background:#f4f4f4;font-family:"Dosis",sans-serif;line-height:1.6}a{text-decoration:none;color:#333}ul{list-style:none}h2,h3,h4{text-transform:uppercase}img{width:100%}
+*{margin:0;padding:0}html{font-size:62.5%}body{background:#f4f4f4;font-family:"Dosis",sans-serif;line-height:1.6;font-size:1.8rem}a{text-decoration:none;color:#333}ul{list-style:none}h2,h3,h4{text-transform:uppercase}img{width:100%}#header-home{background:url("../img/showcase.jpg") no-repeat center right/cover;height:100vh;color:#fff}
