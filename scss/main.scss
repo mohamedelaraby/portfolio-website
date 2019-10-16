@@ -1,4 +1,39 @@
-$primary-color: #00ff00;
+
+// Import files
+@import 'config';
+
+
+//-------[ General Core Styles ]-------//
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
 body{
-    background: $primary-color;
+    background: $light-color;
+    font-family: $primary-font;
+    line-height: 1.6;
+    
+}
+
+// Links 
+a{
+    text-decoration: none;
+    color: $dark-color;
+}
+
+// Lists
+ul{
+    list-style: none;
+}
+
+// Headings
+h2, h3, h4 {
+    text-transform: uppercase;
+}
+
+// Images
+img{
+    width: 100%;
 }
