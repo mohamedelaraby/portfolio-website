@@ -61,6 +61,9 @@ h2, h3, h4 {
 img {
   width: 100%; }
 
+.lead {
+  font-size: 1.6rem; }
+
 #logo {
   width: 7rem;
   height: 7rem;
@@ -94,6 +97,7 @@ img {
 
 #header-home {
   background: url("../img/showcase.jpg") no-repeat center right/cover;
+  background-attachment: fixed;
   height: 100vh;
   color: #fff; }
 
