@@ -1,0 +1,129 @@
+//import files
+@import 'config';
+
+
+// Main container
+.container{
+   max-width: $website-width;
+   padding: 0 1.5rem;
+   margin: auto;
+   overflow: hidden; 
+}
+
+//------[ Buttons ]------//
+
+// Core Base Button
+%btn-shared{
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    transition: all 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn{
+    // Main button
+    &-main{
+        @extend %btn-shared;
+        color: $dark-color;
+        background-color: $main-color;
+    }
+
+    // Light button
+    &-light{
+        @extend %btn-shared;
+        color: $dark-color;
+        background-color: $light-color;
+    }
+
+    // Dark button
+    &-dark{
+        @extend %btn-shared;
+        color: $light-color;
+        background-color: $dark-color;
+    }
+}
+
+// buttons Hover
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover{
+    background-color:$main-color;
+}
+
+
+// Paragraph
+.lead{
+   font-size: 1.6rem;
+   margin-bottom: 2rem; 
+}
+
+// Text center
+.text-center {
+    text-align: center;
+}
+
+// Padding
+.py{
+    // py-1
+    &-1{
+        padding: 1rem 0;
+    }
+    //py-2
+    &-2{
+        padding: 2rem 0;
+    }
+    //py-3
+    &-3{
+        padding: 3rem 0;
+    }
+    //py-4
+    &-4{
+        padding: 4rem 0;
+    }
+}
+
+// Margin
+.my{
+    // py-1
+    &-1{
+        margin: 1rem 0;
+    }
+    //py-2
+    &-2{
+        margin: 2rem 0;
+    }
+    //py-3
+    &-3{
+        margin: 3rem 0;
+    }
+    //py-4
+    &-4{
+        margin: 4rem 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
