@@ -35,12 +35,44 @@ input[class^='btn-']:hover {
 }
 
 .lead {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   margin-bottom: 2rem;
 }
 
 .text-center {
   text-align: center;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.my-4 {
+  margin: 4rem 0;
 }
 
 * {
@@ -74,10 +106,6 @@ h2, h3, h4 {
 
 img {
   width: 100%;
-}
-
-.lead {
-  font-size: 1.6rem;
 }
 
 #logo {
@@ -133,4 +161,16 @@ img {
 #header-home .header-content h1 {
   font-size: 4rem;
   line-height: 1.2;
+}
+
+#home-a .specials {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#home-a .fas {
+  color: #ffbc00;
+  padding-bottom: 0.4rem;
 }

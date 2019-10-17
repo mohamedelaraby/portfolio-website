@@ -42,9 +42,7 @@ img{
     width: 100%;
 }
 
-.lead{
-    font-size: 1.6rem;
-}
+
 // Logo
 #logo{
     width: 7rem;
@@ -115,3 +113,23 @@ img{
     
 }
 
+
+// Home Sections
+
+#home{
+
+    // Section A
+    &-a{
+        .specials{
+            margin-top: 1rem;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(4,1fr);
+        }
+        // Icons
+        .fas{
+            color: $main-color;
+            padding-bottom: 0.4rem;
+        }
+    }
+}
