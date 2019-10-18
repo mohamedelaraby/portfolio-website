@@ -131,7 +131,7 @@ img{
 }
 
 
-// Home Sections
+// [ Home Sections ]-----------------------------------------------
 #home{
 
     // Section A: Specialize
@@ -187,7 +187,6 @@ img{
     }
 
     // Section C: Process
-
     &-c{
         .process{
             @include custom-grid;
@@ -233,14 +232,90 @@ img{
                         background: $dark-color;
                     }
                 }
-            }   
-              
+            }          
         }
     }
-
 }
 
-// Footer
+// [ About Sections ]-----------------------------------------------
+
+
+#about{
+     
+    //Bio  section
+    &-a{
+        // about-info
+        .about-info{
+            display: grid;
+            grid-template-areas: 
+                'bioimage bio bio bio'
+                'aw1 aw2 aw3';
+            gap: 1.2rem;    
+        }
+
+        //Grid Area
+        .bio-image{
+            grid-area: bioimage;
+  
+        }
+
+        //bio
+        .bio{
+            grid-area: bio;
+            border-left: 0.3rem solid $main-color;
+            padding: 0.8rem;
+        }
+
+        // Award-1
+        .award-1{
+            grid-area: aw1;
+        } 
+        
+        // Award-2
+        .award-1{
+            grid-area: aw2;
+        } 
+        
+        // Award-3
+        .award-1{
+            grid-area: aw3;
+        }
+
+        // Award-icons
+        .award-1 .fas,
+        .award-2 .fas,
+        .award-3 .fas{
+            color: $main-color;
+            margin: 1rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// [ Footer ]-----------------------------------------------
 #main-footer{
     background: $dark-color;
     color: set-text-color($dark-color);

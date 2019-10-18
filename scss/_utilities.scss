@@ -60,6 +60,44 @@ input[class^='btn-']:hover{
 }
 
 
+// Backgrounds
+
+.bg{
+    // Main bg
+    &-main{
+        background: $main-color;
+        color: set-text-color($main-color);
+    } 
+    
+    // Light bg
+    &-light{
+        background: $light-color;
+        color: set-text-color($light-color);
+    }
+
+    // Dark bg
+    &-dark{
+        background: $dark-color;
+        color: set-text-color($dark-color);
+    }
+    
+    // Medium bg
+    &-medium{
+        background: $medium-color;
+        color: set-text-color($medium-color);
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
 // Paragraph
 .lead{
    font-size: 1.6rem;
