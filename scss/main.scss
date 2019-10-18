@@ -3,6 +3,7 @@
 @import 'config';
 @import 'utilities';
 @import 'mixins';
+@import 'functions';
 
 
 //-------[ General Core Styles ]-------//
@@ -144,6 +145,7 @@ img{
            line-height: 2;
 
            &.stats-title{
+            font-weight: bold;
             font-size: 1.6rem;
            }
 
@@ -167,6 +169,16 @@ img{
                background: $medium-color;
            }
        }
+    }
+
+    // Section C: Process
+
+    &-c{
+        .process{
+            @include custom-grid;
+            gap: 1.5rem;
+            text-align: center;
+        }
     }
 
 }

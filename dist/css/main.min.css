@@ -28,6 +28,7 @@ button[class^='btn-']:hover, a[class^='btn-']:hover, input[class^='btn-']:hover 
 
 .lead {
   font-size: 1.6rem;
+  font-weight: 400;
   margin-bottom: 2rem; }
 
 .text-center {
@@ -56,6 +57,21 @@ button[class^='btn-']:hover, a[class^='btn-']:hover, input[class^='btn-']:hover 
 
 .my-4 {
   margin: 4rem 0; }
+
+.section-title {
+  font-size: 3rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.bottom-line {
+  height: 0.2rem;
+  width: 8rem;
+  background: #ffbc00;
+  margin: 0 auto 1rem auto;
+  display: block; }
 
 * {
   margin: 0;
@@ -147,6 +163,7 @@ img {
   line-height: 2; }
 
 #home-b li.stats-title {
+  font-weight: bold;
   font-size: 1.6rem; }
 
 #home-b li.stats-number {
@@ -161,3 +178,9 @@ img {
 
 #home-b div:nth-child(even) {
   background: #ccc; }
+
+#home-c .process {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  text-align: center; }
