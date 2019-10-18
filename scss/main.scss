@@ -2,6 +2,7 @@
 // Import files
 @import 'config';
 @import 'utilities';
+@import 'mixins';
 
 
 //-------[ General Core Styles ]-------//
@@ -115,16 +116,14 @@ img{
 
 
 // Home Sections
-
 #home{
 
-    // Section A
+    // Section A: Specialize
     &-a{
         .specials{
             margin-top: 1rem;
-            display: grid;
-            gap: 1rem;
-            grid-template-columns: repeat(4,1fr);
+            gap: 1rem ;
+            @include custom-grid;
         }
         // Icons
         .fas{
@@ -132,4 +131,42 @@ img{
             padding-bottom: 0.4rem;
         }
     }
+
+    // Section B: Stats
+    &-b{
+       .stats{
+           margin-top: 1rem;
+           @include custom-grid;
+       } 
+       
+       // Lists
+       li{
+           line-height: 2;
+
+           &.stats-title{
+            font-size: 1.6rem;
+           }
+
+           &.stats-number{
+            font-size: 2rem;
+            font-weight: bold;
+           }
+       }
+
+       // Divs
+       div {
+           padding:3rem 0;
+
+           // Odd childs
+           &:nth-child(odd){
+               background:$light-color;
+           }
+
+           // Even childs
+           &:nth-child(even){
+               background: $medium-color;
+           }
+       }
+    }
+
 }

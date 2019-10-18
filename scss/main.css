@@ -165,12 +165,43 @@ img {
 
 #home-a .specials {
   margin-top: 1rem;
-  display: grid;
   gap: 1rem;
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
 #home-a .fas {
   color: #ffbc00;
   padding-bottom: 0.4rem;
+}
+
+#home-b .stats {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#home-b li {
+  line-height: 2;
+}
+
+#home-b li.stats-title {
+  font-size: 1.6rem;
+}
+
+#home-b li.stats-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#home-b div {
+  padding: 3rem 0;
+}
+
+#home-b div:nth-child(odd) {
+  background: #f4f4f4;
+}
+
+#home-b div:nth-child(even) {
+  background: #ccc;
 }
