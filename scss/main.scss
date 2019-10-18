@@ -119,6 +119,14 @@ img{
 
     }
 
+    // Header inner
+    &-inner{
+        background:$bg-image no-repeat  20% 30% / cover;
+        background-attachment: fixed;
+        height: 10.5rem;
+        border-bottom: 0.3rem solid $main-color;
+    }
+
     
 }
 

@@ -11,6 +11,11 @@
 /*
 [  author ] ;- Muhammed alaraby
 [  Date   ] ;- 19/10/19
+[  Info   ] ;- Helper utilities.scss preprocessor style
+*/
+/*
+[  author ] ;- Muhammed alaraby
+[  Date   ] ;- 19/10/19
 [  Info   ] ;- confinguration important variables preprocessor style
 */
 .container {
@@ -90,6 +95,11 @@ input[class^='btn-']:hover {
   margin: 0 auto 1rem auto;
   display: block; }
 
+/*
+[  author ] ;- Muhammed alaraby
+[  Date   ] ;- 19/10/19
+[  Info   ] ;- combine some great styles together preprocessor style
+*/
 * {
   margin: 0;
   padding: 0; }
@@ -160,6 +170,12 @@ img {
 #header-home .header-content h1 {
   font-size: 4rem;
   line-height: 1.2; }
+
+#header-inner {
+  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+  background-attachment: fixed;
+  height: 10.5rem;
+  border-bottom: 0.3rem solid #ffbc00; }
 
 #home-a .specials {
   margin-top: 1rem;
