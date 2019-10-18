@@ -18,3 +18,12 @@ $primary-font: 'Dosis', sans-serif;
 $secondary-font:'Merriweather Sans', sans-serif;
 
 $bg-image:url('../img/showcase.jpg');
+
+ // Set Text Color
+ @function set-text-color($color){
+    @if(lightness($color) > 50) {
+        @return $dark-color;
+    } @else {
+        @return $primary-color;
+    }
+ }

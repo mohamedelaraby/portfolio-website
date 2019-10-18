@@ -180,16 +180,12 @@ img{
            
             // process-step
             &-step {
-                position: absolute;
+                @include element-scales(1.5rem,1.5rem,50%,1rem,absolute,1.5rem); 
                 top:0;
                 right: 0;
                 font-size: 2.8rem;
                 background: $main-color;
-                border-radius: 50%;
-                height: 1.5rem;
-                width: 1.5rem;
-                line-height: 1.5rem;
-                padding: 1rem;
+                color: set-text-color($main-color);
                 transition: all 1s;
                 -webkit-transition: all 1s;
                 -moz-transition: all 1s;
@@ -199,19 +195,10 @@ img{
 
             // Process-icon
             &-icon{
-                border-radius:  50%;
-                -webkit-border-radius:  50%;
-                -moz-border-radius:  50%;
-                -ms-border-radius:  50%;
-                -o-border-radius:  50%;
+                @include element-scales(7rem,7rem,50%,2rem,relative,7rem); 
                 background: $dark-color;
-                color: $primary-color;
-                padding: 2rem;
-                width: 7rem;
-                height: 7rem;
-                line-height: 7rem;
+                color: set-text-color($dark-color);
                 text-align: center;
-                position: relative;
                 transition: all 1s ;
                 -webkit-transition: all 1s ;
                 -moz-transition: all 1s ;
@@ -235,4 +222,40 @@ img{
         }
     }
 
+}
+
+// Footer
+#main-footer{
+    background: $dark-color;
+    color: set-text-color($dark-color);
+    height: 5rem;
+
+    // footer-content
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        height: 5rem;
+        align-items: center;
+        
+
+        // social icons
+        .social .fab {
+            margin-right: 1rem;
+            border: 0.2rem $primary-color solid;
+            border-radius: 50%;
+            height: 3rem;
+            width: 3rem;
+            line-height: 3rem;
+            text-align: center;
+            padding: 0.5;
+            transition: background 1s;
+        
+            //social-icon:hover
+            &:hover{
+                background: $main-color;
+            }
+
+        }
+
+    }
 }

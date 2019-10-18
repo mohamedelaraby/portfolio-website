@@ -233,16 +233,21 @@ img {
 }
 
 #home-c .process-step {
+  border-radius: 50%;
+  padding: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
   position: absolute;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   top: 0;
   right: 0;
   font-size: 2.8rem;
   background: #ffbc00;
-  border-radius: 50%;
-  height: 1.5rem;
-  width: 1.5rem;
-  line-height: 1.5rem;
-  padding: 1rem;
+  color: #fff;
   transition: all 1s;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -252,18 +257,18 @@ img {
 
 #home-c .process-icon {
   border-radius: 50%;
+  padding: 2rem;
+  width: 7rem;
+  height: 7rem;
+  line-height: 7rem;
+  position: relative;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   background: #333;
   color: #fff;
-  padding: 2rem;
-  width: 7rem;
-  height: 7rem;
-  line-height: 7rem;
   text-align: center;
-  position: relative;
   transition: all 1s;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -280,4 +285,33 @@ img {
 
 #home-c .process-icon:hover .process-step {
   background: #333;
+}
+
+#main-footer {
+  background: #333;
+  color: #fff;
+  height: 5rem;
+}
+
+#main-footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+}
+
+#main-footer .footer-content .social .fab {
+  margin-right: 1rem;
+  border: 0.2rem #fff solid;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  padding: 0.5;
+  transition: background 1s;
+}
+
+#main-footer .footer-content .social .fab:hover {
+  background: #ffbc00;
 }

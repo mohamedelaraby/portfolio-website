@@ -3,3 +3,17 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
+
+//custom element scales
+@mixin element-scales($width, $height,$border-radius, $padding, $position, $line-height){
+    border-radius:  $border-radius;
+    padding: $padding;
+    width: $width;
+    height: $height;
+    line-height: $line-height;
+    position: $position;
+    -webkit-border-radius:  $border-radius;
+    -moz-border-radius:  $border-radius;
+    -ms-border-radius:  $border-radius;
+    -o-border-radius:  $border-radius;
+}
